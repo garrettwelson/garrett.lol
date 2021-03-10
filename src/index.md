@@ -1,6 +1,8 @@
 ---
 title: "garrett welson"
 layout: "layouts/home.html"
+homepage:
+  postsCardHeader: "some recent posts"
 ---
 
 # hello!

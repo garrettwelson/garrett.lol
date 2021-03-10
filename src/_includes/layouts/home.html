@@ -1,3 +1,11 @@
 {% extends "layouts/base.html" %} {% block content %}
 <article>{{ content | safe }}</article>
+<section>
+  <h3>{{homepage.postsCardHeader}}</h3>
+  <ul>
+    {% for item in collections.posts %}
+    <li>{{item.data.title}}</li>
+    {% endfor %}
+  </ul>
+</section>
 {% endblock %}
