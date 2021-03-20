@@ -10,5 +10,11 @@
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
   }
 }
