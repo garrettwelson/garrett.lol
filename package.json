@@ -9,7 +9,8 @@
   "author": "Garrett <garrettwelson@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.1.1"
   },
   "prettier": {
     "trailingComma": "es5",

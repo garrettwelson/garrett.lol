@@ -1,28 +1,24 @@
 {
-  "items": [
-    {
-      "text": "home",
-      "url": "/"
-    },
-    {
-      "text": "resume",
-      "url": "/static/files/resume.pdf"
-    },
-    {
-      "text": "projects",
-      "url": "/projects/"
-    },
-    {
-      "text": "blog",
-      "url": "/blog/"
-    },
-    {
-      "text": "faq",
-      "url": "/faq/"
-    },
-    {
-      "text": "contact",
-      "url": "/contact/"
-    }
-  ]
+    "items": [
+        {
+            "text": "home",
+            "url": "/"
+        },
+        {
+            "text": "projects",
+            "url": "/projects/"
+        },
+        {
+            "text": "blog",
+            "url": "/blog/"
+        },
+        {
+            "text": "faq",
+            "url": "/faq/"
+        },
+        {
+            "text": "contact",
+            "url": "/contact/"
+        }
+    ]
 }

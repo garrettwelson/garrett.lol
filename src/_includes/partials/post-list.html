@@ -6,13 +6,14 @@
 	</h2>
 	{% endif %}
 	<div>
-	  <ol>
+	  <ul>
 		{% for item in postListItems %}
 		<li>
 		  <a href="{{ item.url }}">{{ item.data.title }}</a>
+		  <p><time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time></p>
 		</li>
 		{% endfor %}
-	  </ol>
+	  </ul>
 	</div>
   </div>
 </div>

@@ -4,7 +4,7 @@
   <h3>{{homepage.postsCardHeader}}</h3>
   <ul>
     {% for item in collections.posts %}
-    <li>{{item.data.title}}</li>
+    <li><a href={{item.url}}>{{item.data.title}}</a></li>
     {% endfor %}
   </ul>
 </section>

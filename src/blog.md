@@ -1,14 +1,13 @@
 ---
-title: "blog"
-layout: "layouts/feed.html"
+title: 'blog'
+layout: 'layouts/feed.html'
 pagination:
-  data: collections.posts
-  size: 5
-permalink: "blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
-paginationPrevText: "Newer posts"
-paginationNextText: "Older posts"
-paginationAnchor: "#post-list"
+    data: collections.posts
+    size: 5
+permalink: 'blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html'
+paginationPrevText: 'Newer posts'
+paginationNextText: 'Older posts'
+paginationAnchor: '#post-list'
 ---
 
-The latest articles from around the studio, demonstrating our design
-thinking, strategy and expertise.
+My personal blog, with some thoughts about tech, discourse, and life.
