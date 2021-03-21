@@ -1,21 +1,28 @@
 {
-  "name": "garrett",
-  "version": "1.0.0",
-  "description": "personal blog for Garrett Welson",
-  "main": ".eleventy.js",
-  "scripts": {
-    "start": "npx eleventy --serve"
-  },
-  "author": "Garrett <garrettwelson@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.1"
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "semi": false,
-    "singleQuote": true
-  }
+    "name": "garrett",
+    "version": "1.0.0",
+    "description": "personal blog for Garrett Welson",
+    "main": ".eleventy.js",
+    "scripts": {
+        "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+        "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
+    },
+    "author": "Garrett <garrettwelson@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@11ty/eleventy": "^0.11.1",
+        "@11ty/eleventy-plugin-rss": "^1.1.1",
+        "concurrently": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-sass": "^4.1.0",
+        "html-minifier": "^4.0.0",
+        "sass": "^1.32.8"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    }
 }
