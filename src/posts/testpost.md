@@ -3,6 +3,7 @@ title: 'testing images and syntax highlighting'
 date: 2021-03-23
 tags: ['test']
 imageURL: 'https://picsum.photos/200/300'
+hasCodeBlocks: true
 ---
 
 {% image imageURL, "alt text foo bar" %}
