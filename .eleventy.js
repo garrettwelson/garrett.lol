@@ -50,6 +50,10 @@ module.exports = (config) => {
         config.addTransform('htmlmin', htmlMinTransform)
     }
 
+    // pass through copies
+    config.addPassthroughCopy('src/static/images')
+    config.addPassthroughCopy('src/static/files')
+
     // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
     config.setUseGitIgnore(false)
 
