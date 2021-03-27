@@ -31,6 +31,34 @@ a:not([class]) {
     outline-offset: 0.25rem;
 }
 
+.progress-bar-container {
+    outline: 2px dashed get-color('primary');
+    outline-offset: 0.25rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 8px;
+}
+
+.progress-bar-outer {
+    width: 75%;
+    outline: 1px solid get-color('dark');
+    display: flex;
+    margin-left: 4px;
+}
+
+.progress-bar-inner {
+    background-color: get-color('secondary-glare');
+}
+
+.progress-bar-remaining {
+    width: 100%;
+    text-align: end;
+    background-color: get-color('quinary-glare');
+}
 main:focus {
     outline: none;
 }
