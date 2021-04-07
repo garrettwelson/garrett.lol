@@ -1,21 +1,25 @@
-<a href="#main-content">Skip to content</a>
-<header role="banner">
-  <nav aria-label="Primary">
-    <ul class="nav__list">
-      {% for item in navigation.items %}
-      <li>
-        <a
-          href="{{ item.url }}"
-          {{
-          helpers.getLinkActiveState(item.url,
-          page.url)
-          |
-          safe
-          }}
-          >{{ item.text }}</a
-        >
-      </li>
-      {% endfor %}
-    </ul>
-  </nav>
+<a href="#main-content" class="[ skip-link ] [ button ]">Skip to content</a>
+<header role="banner" class="site-head">
+  <div class="wrapper">
+    <div class="site-head__inner">
+      <nav aria-label="Primary" class="[ nav ] [ site-head__nav ] [ font-sans ]">
+        <ul class="nav__list">
+          {% for item in navigation.items %}
+          <li class="nav__item">
+            <a
+              href="{{ item.url }}"
+              {{
+              helpers.getLinkActiveState(item.url,
+              page.url)
+              |
+              safe
+              }}
+              >{{ item.text }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
